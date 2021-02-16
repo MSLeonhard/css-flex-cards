@@ -13,37 +13,37 @@ body {
 }
 
 .card {
-
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card a {
-	
+    color: inherit;
+    text-decoration: none;
 }
 
 .card a:hover {
-	
 }
 
 .card-content {
-	
+	margin: .5em;
 }
 
 .card-content h2 {
-
+    text-align: center;
 }
 
 .card-content p {
-	
+	margin: 1em;
 }
 
 /* Flexbox stuff */
 
 @media screen and (min-width: 40em) {
     .cards {
-        display: ;
-        flex-wrap: ;
-        justify-content: ;
-        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .card {
@@ -55,11 +55,13 @@ body {
 
 @media screen and (min-width: 60em) {
     .cards {
-        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     
     .card {
-        flex: ;
+        flex: 0 1 calc(33% - .5em);
         margin-bottom: 2em;
     }
 }
